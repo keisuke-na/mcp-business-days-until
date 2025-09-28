@@ -1,6 +1,6 @@
 {
-  "name": "@keisuke-na/mcp-business-days-until",
-  "version": "1.0.1",
+  "name": "mcp-business-days-until",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/main.js",
   "bin": {
