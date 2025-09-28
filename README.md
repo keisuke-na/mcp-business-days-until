@@ -17,11 +17,16 @@ Add the following to your Claude Code configuration file (`~/Library/Application
   "mcpServers": {
     "business-days": {
       "command": "npx",
-      "args": ["-y", "@keisuke-na/mcp-business-days-until"]
+      "args": ["-y", "@keisuke-na/mcp-business-days-until"],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      }
     }
   }
 }
 ```
+
+Note: Adjust the PATH according to your system. You can find your PATH by running `echo $PATH` in terminal.
 
 ## Features
 
