@@ -14,7 +14,7 @@ You can easily add this MCP server to Claude Code using:
 
 ```bash
 # Add with any name you prefer (e.g., "business-days")
-claude mcp add business-days "npx -y mcp-business-days-until"
+claude mcp add business-days npx -- -y mcp-business-days-until
 ```
 
 Or manually add the following to your Claude Code configuration file (`~/Library/Application Support/Claude/claude_desktop_config.json`):
