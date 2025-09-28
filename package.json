@@ -1,0 +1,27 @@
+{
+  "name": "@keisuke-na/mcp-business-days-until",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/main.js",
+  "bin": {
+    "mcp-business-days-until": "dist/main.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mcp", "modelcontextprotocol", "business-days"],
+  "author": "keisuke-na",
+  "license": "MIT",
+  "description": "MCP server for calculating business days between dates",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
