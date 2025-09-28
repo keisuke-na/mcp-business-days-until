@@ -1,23 +1,30 @@
-# @keisuke-na/mcp-business-days-until
+# mcp-business-days-until
 
 MCP server for calculating business days between two dates.
 
 ## Installation
 
 ```bash
-npm install -g @keisuke-na/mcp-business-days-until
+npm install -g mcp-business-days-until
 ```
 
 ## Usage with Claude Code
 
-Add the following to your Claude Code configuration file (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+You can easily add this MCP server to Claude Code using:
+
+```bash
+# Add with any name you prefer (e.g., "business-days")
+claude mcp add business-days "npx -y mcp-business-days-until"
+```
+
+Or manually add the following to your Claude Code configuration file (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
 ```json
 {
   "mcpServers": {
     "business-days": {
       "command": "npx",
-      "args": ["-y", "@keisuke-na/mcp-business-days-until"],
+      "args": ["-y", "mcp-business-days-until"],
       "env": {
         "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
       }
